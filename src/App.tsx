@@ -2,16 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Bot, Cog, Mail } from 'lucide-react';
 import { ContactButton } from './components/ContactButton';
+import { BackgroundVideo } from './components/BackgroundVideo';
 
 function App() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-hero bg-cover bg-center bg-no-repeat">
-        <div className="absolute inset-0 bg-gradient"></div>
-      </div>
-
-      {/* Content */}
+    <BackgroundVideo>
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Added a spacer div at the top */}
         <div className="h-[15%]" />
@@ -59,7 +54,7 @@ function App() {
           <ContactButton />
         </motion.div>
       </div>
-    </div>
+    </BackgroundVideo>
   );
 }
 
