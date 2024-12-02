@@ -13,7 +13,7 @@ export function BackgroundVideo({ children }: BackgroundVideoProps) {
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source
-          src="/src/assets/videos/jet_engine_animation_av1.webm"
+          src="/videos/jet_engine_animation_av1.webm"
           type="video/webm"
         />
       </video>
