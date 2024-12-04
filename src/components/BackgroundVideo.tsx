@@ -17,6 +17,10 @@ export function BackgroundVideo({ children }: BackgroundVideoProps) {
           src="/videos/jet_engine_animation_av1.webm"
           type="video/webm"
         />
+        <source
+          src="/videos/jet_engine_animation_h264.mp4"
+          type="video/mp4"
+        />
       </video>
       <div className="absolute inset-0 bg-gradient"></div>
       {children}
