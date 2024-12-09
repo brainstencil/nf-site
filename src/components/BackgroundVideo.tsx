@@ -3,8 +3,8 @@ interface BackgroundVideoProps {
 }
 
 export function BackgroundVideo({ children }: BackgroundVideoProps) {
-  const handleError = (e: Event) => {
-    const video = e.target as HTMLVideoElement;
+  const handleError = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    const video = e.currentTarget;
     console.error('Video Error:', {
       error: video.error?.code,
       message: video.error?.message,
@@ -14,8 +14,8 @@ export function BackgroundVideo({ children }: BackgroundVideoProps) {
     });
   };
 
-  const handleStalled = (e: Event) => {
-    const video = e.target as HTMLVideoElement;
+  const handleStalled = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    const video = e.currentTarget;
     console.warn('Video Stalled:', {
       currentTime: video.currentTime,
       networkState: video.networkState,
