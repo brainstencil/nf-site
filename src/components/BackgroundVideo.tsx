@@ -44,7 +44,7 @@ export function BackgroundVideo({ children }: BackgroundVideoProps) {
           type="video/webm"
         />
         <source
-          src="/videos/jet_engine_animation_h264.mp4"
+          src="/videos/jet_engine_animation_x264.mp4"
           type="video/mp4"
         />
       </video>
